@@ -1,0 +1,23 @@
+Explain the concept of React state and how it differs from props.
+
+Ans:
+
+-->Props are transfor the data from parant component to child component in JSX
+ex:
+
+import childComponent from './folderName'
+
+const parantComponent =()=>{
+    <div>
+        {
+            <childComponent name="Raju", age=20/>
+        }
+    </div>
+}
+
+const childComponent=(props)=>{
+    return(
+    <p>{props.name}</p>
+    <p>{props.age}</p>
+    )
+} 
